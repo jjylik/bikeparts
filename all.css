@@ -1,0 +1,140 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  }
+  
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+h1 {
+font-size: 3em;
+margin: .67em 0;
+}
+h1, .h1 {
+font-size: 36px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+margin-top: 20px;
+margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: inherit;
+font-weight: 500;
+line-height: 1.1;
+color: inherit;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.part-list {
+	font-size: 1.2em;
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 2em;
+}
+
+.part-list li:hover {
+	background-color: #e0e0e0;
+}
+.part-list a {
+	display: block;
+	color: #333333;
+}
+
+.form-group span {
+	font-size: 1.6em;
+}
+
+.form-group input {
+	font-size: 2em;
+	width: 100%;
+	background: none repeat scroll 0 0 transparent;
+    border-color: #757575;
+    border-image: none;
+    border-radius: 0;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+@media (max-width: 1080px) {
+.part-list li  a{
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+.form-group input {
+	font-size: 4em;
+	
+}
+h1 {
+	font-size: 4em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+}
+

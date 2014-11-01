@@ -1,0 +1,26 @@
+<html ng-app="BikeParts">
+  <head>
+  <link href="all.css" rel="stylesheet">
+ 
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-resource.min.js"></script>
+	  <script src="app.js"></script>
+	  <script src="controller.js"></script>
+
+    <title>Bike parts filter</title>
+  </head>
+  <body ng-controller='AppController'>
+  <div class="container">
+	<h1>Used bike parts</h1>
+	<div class="form-group">
+    <input placeholder="Search" ng-model="search">
+	</div>
+	 <img id="spinner" ng-src="ajax-loader.gif" style="display:none;">
+	 <ul class="part-list">
+    <li ng-repeat="result in allresults | filter:search | filter: '!Myyty'">
+      <a href="{{result.item.href}}">{{result.item.text}}</a>
+    </li>
+  </ul>
+  </div>
+  </body>
+</html>
